@@ -152,49 +152,79 @@
         </div>
     </div>
     <div class="container-fluid section-5">
+        <div class="container-testimonial owl-carousel">
+            <div class="testimonial-box">
+                <img src="img/client-img.png" alt="client">
+                <div class="testimonial-content">
+                    <div class="stars pt-3 pb-4">
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                    </div>
+                    <h6 class="pb-2">Rancho Prasad</h6>
+                    <p>No Paper work, Intelligent Banking experience, Spending cvard, pocket card, etc.</p>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <img src="img/client-img.png" alt="client">
+                <div class="testimonial-content">
+                    <div class="stars pt-3 pb-4">
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                    </div>
+                    <h6 class="pb-2">Rancho Prasad</h6>
+                    <p>No Paper work, Intelligent Banking experience, Spending cvard, pocket card, etc.</p>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <img src="img/client-img.png" alt="client">
+                <div class="testimonial-content">
+                    <div class="stars pt-3 pb-4">
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                    </div>
+                    <h6 class="pb-2">Rancho Prasad</h6>
+                    <p>No Paper work, Intelligent Banking experience, Spending cvard, pocket card, etc.</p>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <img src="img/client-img.png" alt="client">
+                <div class="testimonial-content">
+                    <div class="stars pt-3 pb-4">
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                    </div>
+                    <h6 class="pb-2">Rancho Prasad</h6>
+                    <p>No Paper work, Intelligent Banking experience, Spending cvard, pocket card, etc.</p>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <img src="img/client-img.png" alt="client">
+                <div class="testimonial-content">
+                    <div class="stars pt-3 pb-4">
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                    </div>
+                    <h6 class="pb-2">Rancho Prasad</h6>
+                    <p>No Paper work, Intelligent Banking experience, Spending cvard, pocket card, etc.</p>
+                </div>
+            </div>
+        </div>
         <div class="row justify-content-center py-5">
-            <div class="col-md-3 testimonial-box">
-                <img src="img/client-img.png" alt="client">
-                <div class="testimonial-content">
-                    <div class="stars pt-3 pb-4">
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                    </div>
-                    <h6 class="pb-2">Rancho Prasad</h6>
-                    <p>No Paper work, Intelligent Banking experience, Spending cvard, pocket card, etc.</p>
-                </div>
-            </div>
-            <div class="col-md-3 testimonial-box">
-                <img src="img/client-img.png" alt="client">
-                <div class="testimonial-content">
-                    <div class="stars pt-3 pb-4">
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                    </div>
-                    <h6 class="pb-2">Rancho Prasad</h6>
-                    <p>No Paper work, Intelligent Banking experience, Spending cvard, pocket card, etc.</p>
-                </div>
-            </div>
-            <div class="col-md-3 testimonial-box">
-                <img src="img/client-img.png" alt="client">
-                <div class="testimonial-content">
-                    <div class="stars pt-3 pb-4">
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                        <span>&starf;</span>
-                    </div>
-                    <h6 class="pb-2">Rancho Prasad</h6>
-                    <p>No Paper work, Intelligent Banking experience, Spending cvard, pocket card, etc.</p>
-                </div>
-            </div>
         </div>
     </div>
     <div class="container-fluid">
@@ -288,7 +318,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>\
-    <script src="js/bootstrap-modal.js"></script>
+    <!-- <script src="js/bootstrap-modal.js"></script> -->
     <script src="js/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -300,15 +330,23 @@
                 autoplay: true,
                 mouseDrag: true
             });
-            // $('.section-5 .owl-carousel').owlCarousel({
-            //     loop:true,
-            //     margin:10,
-            //     nav:true,
-            //     items: 3,
-            //     autoplay: true,
-            //     mouseDrag: true
-            // });
-            $('#contactModal').modal('show');
+            $('.container-testimonial.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            });
+            // $('#contactModal').modal('show');
         });
     </script>
 </body>
