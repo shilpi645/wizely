@@ -14,8 +14,8 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row justify-content-end px-3">
-            <a href="#" type="button" class="col-md-2 cta btn btn-dark" data-toggle="modal" data-target="#contactModal">
+        <div class="floating-cta">
+            <a href="#" type="button" class="col-md-2 cta btn btn-dark" data-toggle="modal" data-target="#myModal">
                 Contact Us
             </a>
         </div>
@@ -29,16 +29,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="about.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link nav-features" href="index.html#features">Features</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="newsroom.html">Newsroom</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Wizeup</a>
+                        <a class="nav-link" href="#">Wizeup</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Wizely AI</a>
@@ -224,28 +224,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>\
-    <script src="js/bootstrap-modal.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.owl-carousel').owlCarousel({
-                loop:true,
-                margin:10,
-                nav:true,
-                items: 1,
-                autoplay: true,
-                mouseDrag: true
-            });
-            // $('.section-5 .owl-carousel').owlCarousel({
-            //     loop:true,
-            //     margin:10,
-            //     nav:true,
-            //     items: 3,
-            //     autoplay: true,
-            //     mouseDrag: true
-            // });
-            $('#contactModal').modal('show');
-        });
-    </script>
 </body>
 </html>

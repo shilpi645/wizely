@@ -13,32 +13,29 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 <body>
-    <!-- <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
             <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="contactModalLabel">Modal title</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
-    </div> -->
+    </div>
+    <div class="floating-cta">
+        <a href="#" type="button" class="col-md-2 cta btn btn-dark" data-toggle="modal" data-target="#myModal">
+            Contact Us
+        </a>
+    </div>
     <div class="container-fluid bg-grey section-1">
-        <div class="row justify-content-end px-3">
-            <a href="#" type="button" class="col-md-2 cta btn btn-dark" data-toggle="modal" data-target="#contactModal">
-                Contact Us
-            </a>
-        </div>
-        <nav class="navbar navbar-expand-md navbar-light p-0">
+        <nav class="navbar navbar-expand-md navbar-light pt-3 pb-0">
             <a class="navbar-brand " href="#">
                 <img src="img/brand-logo.png" alt="Wizely" />
             </a>
@@ -51,7 +48,7 @@
                         <a class="nav-link" href="about.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link nav-features" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="newsroom.html">Newsroom</a>
@@ -96,11 +93,11 @@
             </li>
         </ul>
     </div>
-    <div class="container-fluid section-3 text-center text-sm-left">
+    <div class="container-fluid section-3 text-center text-sm-left " id="features">
         <div class="row pt-3 bg-grey">
             <div class="col-sm-6 offset-lg-2 col-lg-4">
                 <img src="img/mobile-feature-1.png" alt="">
-            </div>
+            </div> 
             <div class="col-sm-6 offset-md-1 col-md-5 col-lg-4 vertical-center-left ">
                 <h3>Goal Based Savings</h3>
                 <p>No Paper work, Intelligent Banking experience, Spending cvard, pocket card, etc.</p>
@@ -314,40 +311,10 @@
             @2019 Cowper Labs Pvt. Ltd. All Rights Reserved.
         </p>
     </footer>
-    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>\
-    <!-- <script src="js/bootstrap-modal.js"></script> -->
     <script src="js/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.owl-carousel').owlCarousel({
-                loop:true,
-                margin:10,
-                nav:true,
-                items: 1,
-                autoplay: true,
-                mouseDrag: true
-            });
-            $('.container-testimonial.owl-carousel').owlCarousel({
-                loop:true,
-                margin:10,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:3
-                    },
-                    1000:{
-                        items:5
-                    }
-                }
-            });
-            // $('#contactModal').modal('show');
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
